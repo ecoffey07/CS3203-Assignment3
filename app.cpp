@@ -11,3 +11,9 @@ int add(vector<int> a){
     return total;
 }
 
+int main(){
+    vector<int> numbers;
+    numbers = {1, 2, 3, 4, 5};
+    cout << "Total: " << add(numbers) << endl;
+    return 0;
+}

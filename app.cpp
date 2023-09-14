@@ -19,9 +19,19 @@ int multiply(vector<int> a){
     return product;
 }
 
+int maximum(vector<int> a){
+    int max = 0;
+    for(vector<int>::iterator iter = a.begin(); iter != a.end(); iter++){
+        if(max < *iter){
+            max = *iter;
+        }
+    }
+}
+
 int main(){
     vector<int> numbers;
     numbers = {1, 2, 3, 4, 5};
     cout << "Total: " << add(numbers) << endl;
+    cout << "Product: " << multiply(numbers);
     return 0;
 }
